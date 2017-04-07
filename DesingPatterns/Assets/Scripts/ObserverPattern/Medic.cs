@@ -7,7 +7,7 @@ namespace Observer
 	{
 		public void OnDamageNotify(int health)
 		{
-			Debug.Log(name + ": Heel~");
+			Debug.Log(name + ": Heal~");
 		}
 
 	} 

@@ -3,11 +3,11 @@ using System.Collections;
 
 namespace Strategy
 {
-	public class Heel : IAttack
+	public class Heal : IAttack
 	{
 		public void Attack()
 		{
-			Debug.Log("Heel~");
+			Debug.Log("Heal~");
 		}
 	} 
 }

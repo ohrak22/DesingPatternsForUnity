@@ -7,7 +7,7 @@ namespace Strategy
 	{
 		void Awake()
 		{
-			attackBehaviour = new Heel();
+			attackBehaviour = new Heal();
 			moveBehaviour = new Move();
 		}
 	} 
