@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Heel : IAttack
+namespace Strategy
 {
-	public void Attack()
+	public class Heel : IAttack
 	{
-		Debug.Log("Heel~");
-	}
+		public void Attack()
+		{
+			Debug.Log("Heel~");
+		}
+	} 
 }

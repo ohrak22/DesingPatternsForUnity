@@ -2,18 +2,21 @@
 using System.Collections;
 using System;
 
-public class Unit : MonoBehaviour
+namespace Strategy
 {
-	protected IAttack attackBehaviour;
-	protected IMove moveBehaviour;
-
-	public void Attack()
+	public class Unit : MonoBehaviour
 	{
-		attackBehaviour.Attack();
-	}
+		protected IAttack attackBehaviour;
+		protected IMove moveBehaviour;
 
-	public void Move()
-	{
-		moveBehaviour.Move();
-	}
+		public void Attack()
+		{
+			attackBehaviour.Attack();
+		}
+
+		public void Move()
+		{
+			moveBehaviour.Move();
+		}
+	} 
 }

@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Firebet : Unit
+namespace Strategy
 {
-	void Awake()
+	public class Firebet : Unit
 	{
-		attackBehaviour = new Fire();
-		moveBehaviour = new Move();
-	}
+		void Awake()
+		{
+			attackBehaviour = new Fire();
+			moveBehaviour = new Move();
+		}
+	} 
 }

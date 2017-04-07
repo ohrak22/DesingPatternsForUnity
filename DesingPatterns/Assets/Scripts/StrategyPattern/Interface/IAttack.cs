@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IAttack
+namespace Strategy
 {
-	void Attack();
+	public interface IAttack
+	{
+		void Attack();
+	} 
 }

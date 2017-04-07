@@ -2,10 +2,13 @@
 using System.Collections;
 using System;
 
-public class Move : IMove
+namespace Strategy
 {
-	void IMove.Move()
+	public class Move : IMove
 	{
-		Debug.Log("Move!");
-	}
+		void IMove.Move()
+		{
+			Debug.Log("Move!");
+		}
+	} 
 }

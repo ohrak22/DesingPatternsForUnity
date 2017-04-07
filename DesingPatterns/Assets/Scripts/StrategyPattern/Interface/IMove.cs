@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IMove
+namespace Strategy
 {
-	void Move();
+	public interface IMove
+	{
+		void Move();
+	} 
 }

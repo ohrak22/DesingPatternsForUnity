@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Marine : Unit
+namespace Strategy
 {
-	void Awake()
+	public class Marine : Unit
 	{
-		attackBehaviour = new Fire();
-		moveBehaviour = new Move();
-	}
+		void Awake()
+		{
+			attackBehaviour = new Fire();
+			moveBehaviour = new Move();
+		}
+	} 
 }

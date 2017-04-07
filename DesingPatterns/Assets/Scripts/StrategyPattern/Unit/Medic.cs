@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Medic : Unit
+namespace Strategy
 {
-	void Awake()
+	public class Medic : Unit
 	{
-		attackBehaviour = new Heel();
-		moveBehaviour = new Move();
-	}
+		void Awake()
+		{
+			attackBehaviour = new Heel();
+			moveBehaviour = new Move();
+		}
+	} 
 }

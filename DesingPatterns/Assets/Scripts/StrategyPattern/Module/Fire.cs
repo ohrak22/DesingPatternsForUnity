@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fire : IAttack
+namespace Strategy
 {
-	public void Attack()
+	public class Fire : IAttack
 	{
-		Debug.Log("Fire!");
-	}
+		public void Attack()
+		{
+			Debug.Log("Fire!");
+		}
+	} 
 }
