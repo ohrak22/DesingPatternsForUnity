@@ -8,15 +8,15 @@ namespace Strategy
 		void Start()
 		{
 			GameObject marineGo = new GameObject("Marine");
-			GameObject firebetGo = new GameObject("Firebet");
+			GameObject FirebatGo = new GameObject("Firebat");
 			GameObject medicGo = new GameObject("Medic");
 
 			Unit marine = marineGo.AddComponent<Marine>();
-			Unit firebet = firebetGo.AddComponent<Firebet>();
+			Unit Firebat = FirebatGo.AddComponent<Firebat>();
 			Unit medic = medicGo.AddComponent<Medic>();
 
 			marine.Attack();
-			firebet.Attack();
+			Firebat.Attack();
 			medic.Attack();
 		}
 	} 

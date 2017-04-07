@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Strategy
 {
-	public class Firebet : Unit
+	public class Firebat : Unit
 	{
 		void Awake()
 		{

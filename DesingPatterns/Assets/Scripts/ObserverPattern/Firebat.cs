@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Observer
 {
-	public class Firebet : MonoBehaviour
+	public class Firebat : MonoBehaviour
 	{
 		public void OnDamageNotify(int health)
 		{
