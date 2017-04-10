@@ -9,6 +9,7 @@ namespace Singleton
 		void Start()
 		{
 			Debug.Log(MySingleton.Instance.name);
+			Debug.Log(Singleton.Instance.GetType().Name);
 		}
 
 	} 
