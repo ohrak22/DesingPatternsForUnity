@@ -5,7 +5,7 @@ using System;
 
 namespace FactoryMethod
 {
-	public class Starport : Building
+	public class Starport : Factory
 	{
 		public override Unit CreateUnit(string type)
 		{

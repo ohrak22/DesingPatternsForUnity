@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/StrategyPattern.unity
+- path: Assets/Scenes/AbstractFactoryScene.unity
   isLoaded: 1
   isActive: 1

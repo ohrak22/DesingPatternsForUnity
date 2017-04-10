@@ -10,8 +10,8 @@ namespace FactoryMethod
 			GameObject barracksObj = new GameObject("Barracks");
 			GameObject starportObj = new GameObject("Starport");
 
-			Building barracks = barracksObj.AddComponent<Barracks>();
-			Building starport = starportObj.AddComponent<Starport>();
+			Factory barracks = barracksObj.AddComponent<Barracks>();
+			Factory starport = starportObj.AddComponent<Starport>();
 
 			Unit unit = barracks.CreateUnit("Marine");
 			unit = barracks.CreateUnit("Firebat");

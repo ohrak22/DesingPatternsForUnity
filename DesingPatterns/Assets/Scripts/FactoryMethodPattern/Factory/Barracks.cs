@@ -4,7 +4,7 @@ using System;
 
 namespace FactoryMethod
 {
-	public class Barracks : Building
+	public class Barracks : Factory
 	{
 		public override Unit CreateUnit(string type)
 		{
