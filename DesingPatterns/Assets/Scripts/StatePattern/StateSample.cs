@@ -12,7 +12,6 @@ namespace State
 			unit.Stop();
 			unit.Attack();
 			unit.UnderAttack();
-			unit.Attack();
 		}
 		
 	} 

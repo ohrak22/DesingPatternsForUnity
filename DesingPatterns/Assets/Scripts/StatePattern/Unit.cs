@@ -45,6 +45,10 @@ namespace State
 		private State MoveState = new MoveState();
 		private State UnderAttackState = new UnderAttackState();
 		public State state { get; set; }
+		public Unit()
+		{
+			state = Idle;
+		}
 
 		public void Stop()
 		{
@@ -64,6 +68,8 @@ namespace State
 		public void UnderAttack()
 		{
 			state = UnderAttackState;
+			state.Print();
+			state = AttackState;
 			state.Print();
 		}
 	} 
