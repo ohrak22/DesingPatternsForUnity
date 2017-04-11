@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace TemplateMethod
 {
@@ -19,6 +20,22 @@ namespace TemplateMethod
 			firebat.EquipArmor();
 			firebat.Attack();
 			firebat.Move();
+
+			List<Unit> list = new List<Unit>();
+			list.Add(firebat);
+			list.Add(marine);
+			list.Add(firebat);
+			list.Add(marine);
+			list.Add(firebat);
+			list.Add(marine);
+
+			list.Sort();
+
+			for(int i = 0; i < list.Count; i++)
+			{
+				Debug.Log(list[i].GetType().Name + ": " + list[i].type);
+			}
+
 		}
 	} 
 }

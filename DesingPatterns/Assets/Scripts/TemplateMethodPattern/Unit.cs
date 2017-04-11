@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 namespace TemplateMethod
 {
-	public abstract class Unit
+	public abstract class Unit : IComparable<Unit>
 	{
+		public int type = 0;
+
 		public abstract void EquipWeapon();
 		public abstract void Attack();
 
@@ -17,10 +20,30 @@ namespace TemplateMethod
 			Debug.Log("Move");
 		}
 
+		public int CompareTo(Unit unit)
+		{
+			if(this.type < unit.type)
+			{
+				return -1;
+			}
+			else if(this.type == unit.type)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+		}
 	}
 
 	public class Marine : Unit
 	{
+		public Marine()
+		{
+			type = 1;
+		}
+
 		public override void EquipWeapon()
 		{
 			Debug.Log("Equip rifle");
@@ -33,6 +56,11 @@ namespace TemplateMethod
 
 	public class Firebat : Unit
 	{
+		public Firebat()
+		{
+			type = 2;
+		}
+
 		public override void EquipWeapon()
 		{
 			Debug.Log("Equip flamethrower");
@@ -42,4 +70,6 @@ namespace TemplateMethod
 			Debug.Log("Fire!");
 		}
 	}
+
+
 }
