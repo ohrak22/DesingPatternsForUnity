@@ -7,7 +7,11 @@ namespace Adapter
 	{
 		void Start()
 		{
+			Army army = new Army();
+			Army cyborg = new ArmyAdapter(new Cyborg());
 
+			army.Voice();
+			cyborg.Voice();
 		}
 	} 
 }
